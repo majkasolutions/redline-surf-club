@@ -202,6 +202,10 @@ p{margin:0}
   radial-gradient(90% 60% at 50% 0%,rgba(63,201,219,.09),transparent 60%),
   linear-gradient(180deg,var(--ink),var(--ink-2));overflow:hidden}
 .gear-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.gear-fig{margin:22px 0 0;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--ink-3)}
+.gear-fig video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.gear-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:52px 20px 16px;font-size:13px;color:#D7E4E9;
+  background:linear-gradient(180deg,transparent,rgba(7,22,29,.85))}
 .gear{position:relative;padding:40px 36px 44px;border:1px solid var(--line);border-radius:var(--r);
   background:linear-gradient(160deg,rgba(242,246,245,.05),rgba(242,246,245,.01));
   transition:transform .55s var(--ease),border-color .45s}

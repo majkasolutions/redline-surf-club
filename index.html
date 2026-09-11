@@ -71,12 +71,13 @@
   <div class="hero-media">
     <picture>
       <source type="image/webp" sizes="100vw"
-              srcset="assets/img/hero-640.webp 640w, assets/img/hero-1000.webp 1000w, assets/img/hero-1456.webp 1456w">
-      <img class="hero-still" src="assets/img/hero-1000.jpg" alt="" width="1456" height="816"
+              srcset="assets/img/hero-640.webp 640w, assets/img/hero-1000.webp 1000w, assets/img/hero-1456.webp 1456w, assets/img/hero-1920.webp 1920w">
+      <img class="hero-still" src="assets/img/hero-1000.jpg" alt="" width="1920" height="1080"
            fetchpriority="high" decoding="async" sizes="100vw"
-           srcset="assets/img/hero-640.jpg 640w, assets/img/hero-1000.jpg 1000w, assets/img/hero-1456.jpg 1456w">
+           srcset="assets/img/hero-640.jpg 640w, assets/img/hero-1000.jpg 1000w, assets/img/hero-1456.jpg 1456w, assets/img/hero-1920.jpg 1920w">
     </picture>
-    <video id="heroVid" class="hero-vid" data-src="assets/video/hero.mp4"
+    <!-- hero görüntüsü: JP Australia RS Pro tanıtım filminden (distribütör kullanımı) -->
+    <video id="heroVid" class="hero-vid" data-src="assets/video/hero.mp4" data-src-sm="assets/video/hero-sm.mp4"
            muted loop playsinline preload="none" aria-hidden="true"></video>
     <div class="hero-scrim"></div>
     <div class="hero-grain"></div>
@@ -229,6 +230,11 @@
         <span class="gear-badge" data-tr="Türkiye distribütörü" data-en="Turkish distributor">Türkiye distribütörü</span>
       </article>
     </div>
+
+    <figure class="gear-fig rv">
+      <video src="assets/video/gear.mp4" poster="assets/img/gear.jpg" muted loop playsinline preload="none" class="lazyvid" aria-hidden="true"></video>
+      <figcaption data-tr="JP Australia wing foil ve windsurf board'ları — görüntü: JP Australia" data-en="JP Australia wing foil and windsurf boards — footage: JP Australia">JP Australia wing foil ve windsurf board'ları — görüntü: JP Australia</figcaption>
+    </figure>
   </div>
 
   <div class="marquee" aria-hidden="true">

@@ -143,7 +143,9 @@
     // yavaş bağlantı ya da veri tasarrufu: sadece kapak karesi kalsın
     if (c.saveData || /^([23])g$/.test(c.effectiveType || '')) return;
     hero.addEventListener('playing', function () { hero.classList.add('on'); }, { once: true });
-    hero.src = hero.getAttribute('data-src');
+    // dar ekranda küçük sürüm (960x540); geniş ekranda 1080p
+    var sm = hero.getAttribute('data-src-sm');
+    hero.src = (sm && window.innerWidth <= 700) ? sm : hero.getAttribute('data-src');
     var p = hero.play();
     if (p && p.catch) p.catch(function () {});
   }
